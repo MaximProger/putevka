@@ -429,6 +429,7 @@ body {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     margin-bottom: 0;
+    padding-bottom: 5px;
   }
   .faq__content {
     padding-left: 15px;
