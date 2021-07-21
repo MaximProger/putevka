@@ -491,10 +491,58 @@ body {
   // Step END
 
   // FAQ
+  .faq {
+    .container {
+      padding: 0;
+    }
+  }
+
+  .faq__title {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .faq__content__title {
     font-size: 16px;
 
     margin-bottom: 24px;
+  }
+
+  .faq__nav__wrapper {
+    overflow-x: scroll;
+
+    margin-left: 15px;
+    margin-bottom: 32px;
+
+    &::-webkit-scrollbar {
+      width: 15px;
+      height: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $gray;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $purple;
+      border-radius: 10px;
+      border: none;
+    }
+  }
+
+  .faq__nav {
+    flex-wrap: nowrap;
+
+    margin-bottom: 0;
+  }
+
+  .faq__content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .faq__item {
+    min-width: fit-content;
   }
 
   .faq__card {
