@@ -480,7 +480,8 @@ body {
 
     display: block;
 
-    width: 290px !important;
+    width: 100% !important;
+    max-width: 290px;
     margin: 0 auto;
 
     transform: none !important;
