@@ -1,0 +1,31 @@
+// USER VARIABLES SECTION
+$fontsize: 16px; // Body Font Size
+$textcolor: #000; // Text Color
+$lineheight: 1.4; // Document Line Height
+$userfont: Montserrat, sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+
+// Breakpoints
+$tablet: 1199px;
+$mobile: 767px;
+$mobile-sm: 374px;
+
+$gray: #f6f6f6;
+$orange: #fdae38;
+$violet: #001f67;
+$purple: #4e78da;
+
+// FONTS LOAD SECTION
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: local($fname), url($furl) format("woff2");
+    font-display: swap;
+  }
+}
+
+@include font("Montserrat", normal, 400, "../fonts/Montserrat-Regular.woff2");
+@include font("Montserrat", normal, 600, "../fonts/Montserrat-SemiBold.woff2");
+@include font("Montserrat", normal, 700, "../fonts/Montserrat-Bold.woff2");
